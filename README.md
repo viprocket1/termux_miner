@@ -1,20 +1,21 @@
-README.md
-
-Termux Miner
+# Termux Miner
 
 Lightweight miner script for Termux.
 
-Install
+## Install
 
-Run a single command in Termux:
+Run this in Termux:
 
+```sh
 curl -sLO https://raw.githubusercontent.com/viprocket1/termux_miner/main/app.sh && chmod +x app.sh && ./app.sh
+```
 
-Files
+## Files
 
-app.sh — main script
+- `app.sh` — main script
 
+## Uninstall
 
-Uninstall
-
-Just delete the script:
+```sh
+rm app.sh
+```
