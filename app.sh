@@ -2,7 +2,6 @@
 
 clear
 
-# Mock miner UI loop
 while true; do
     clear
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
@@ -20,7 +19,7 @@ while true; do
     echo
     echo "[ LIVE STREAM ]"
     for i in {1..5}; do
-        HASH=$(head -c 12 /dev/urandom | xxd -p)
+        HASH=$(head -c 12 /dev/urandom | hexdump -ve '1/1 "%02x"')
         echo "> 000000$HASH"
     done
     echo
